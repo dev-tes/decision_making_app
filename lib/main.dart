@@ -33,23 +33,23 @@ class _DecisionPageState extends State<DecisionPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Container(
-          color: Colors.blue,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Expanded(
-                child: TextButton(
-                  onPressed: () {
-                    switchImage();
-                  },
-                  child: Image.asset('images/ball$imageNumber.png'),
-                ),
+    return Container(
+      color: Colors.blue,
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Expanded(
+              child: TextButton(
+                onPressed: () {
+                  switchImage();
+                },
+                child: Image.asset('images/ball$imageNumber.png'),
               ),
-            ],
-          ),
-        )
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
